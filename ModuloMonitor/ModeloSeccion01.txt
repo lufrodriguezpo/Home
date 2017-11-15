@@ -1,0 +1,46 @@
+				<section class="seccion_cards" visible-menu="false" lado="izquierdo">
+					<article class="card">
+						<div class="card_img" style="background-image:url('images/agendar.jpg')">
+							
+							<div class="card_etiqueta">ETIQUETA</div>
+						</div>
+						<div class="card_contenedor_contenido">
+							<div class="card_titulo">
+								Titulo de mi opcion
+							</div>
+							<div class="card_subtitulo">
+								Subtitulo Opcional para esta option
+							</div>
+							<div class="card_descripcion">
+								Puede elegir un tema de color de acuerdo con sus preferencias al iniciar Dreamweaver. También puede cambiar esta preferencia en cualquier momento. Seleccione Edición > Preferencias (Windows) o Dreamweaver > Preferencias (Macintosh). Seleccione Interfaz en la lista Categoría de la izquierda
+							</div>
+						</div>
+					</article>
+					<article class="menu">
+						<div class="opcion_card">
+							<div class="icono_opcion_card eOpcion_card">
+								<img src="images/calendario.png"/>
+							</div>
+							<div class="titulo_opcion_card eOpcion_card">
+								Titulo
+							</div>
+							<div class="borde_opcion_card eOpcion_card">
+								&nbsp;
+							</div>
+						</div>
+						
+						
+						<div class="opcion_card">
+							<div class="icono_opcion_card eOpcion_card">
+								<img src="images/calendario.png"/>
+							</div>
+							<div class="titulo_opcion_card eOpcion_card">
+								Este es otro titulo 
+							</div>
+							<div class="borde_opcion_card eOpcion_card">
+								&nbsp;
+							</div>
+						</div>
+						
+					</article>
+				</section>

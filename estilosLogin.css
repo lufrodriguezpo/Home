@@ -1,0 +1,206 @@
+/* CSS Document */
+@font-face {
+    font-family: SansOpen;
+    src: url(font/Pompiere/Pompiere-Regular.otf);
+    font-weight: normal;
+}
+
+/*ENTORNO*/
+*{
+	padding:0px;
+	margin:0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:SansOpen;
+	font-size:28px;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
+	
+
+}
+body{
+	background:url(images/imagen1.jpg?v=1.0);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	align-items:stretch;
+	width:100%;
+	color:#FFFFFF;
+}
+#contenedor-body{
+	background:rgba(0,0,0,0.5);
+	width:100%;
+}
+
+/*HEADER*/
+#contenedor-header{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+	justify-content:space-between;
+	align-items:center;
+	align-content:center;
+	padding:10px;
+}
+#contenedor-header:hover{
+	background:rgba(36,64,96,0.8);
+}
+.eHeader{
+	flex-grow:1;
+	width:300px;
+	overflow:auto;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+#logo{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	align-items:center;
+	align-content:center;
+	padding-left:50px;
+	margin-right:150px;
+}
+#logo-titulo{
+	margin-left:10px;
+	font-size:36px;
+	padding-top:5px;
+}
+#menu{
+	width:400px;
+	flex-grow:4;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+	align-content:center;
+	margin-left:400px;
+}
+.menu-opcion{
+	flex-grow:1;
+	text-align:center;
+	padding:10px 0px;
+	
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-transition: background 0.5s ease-in-out;
+	-moz-transition: background 0.5s ease-in-out;
+	-o-transition: background 0.5s ease-in-out;
+	transition: background 0.5s ease-in-out;
+	
+		
+	-webkit-transition: color 0s ease-in-out;
+	-moz-transition: color 0s ease-in-out;
+	-o-transition: color 0s ease-in-out;
+	transition: color 0s ease-in-out;
+}
+.activo,.menu-opcion:hover{
+	background:#57D069;
+	color:#274060;
+}
+
+/*Contenido*/
+#contenido{
+	width:100%;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+}
+#contenedor-login{
+	width:80%;
+	max-width:500px;
+	height:400px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:space-around;
+	align-items:center;
+	align-content:center;
+	background:rgba(0,0,0,0.4);
+	
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	
+	
+}
+#contenedor-login:hover{
+	background:rgba(0,0,0,0.85);
+}
+#contenedor-login:hover #titulo-login{
+	color:#57D069;
+}
+#contenedor-login:hover #botton-login{
+	background:#57D069;
+}
+#titulo-login{
+	font-size:58px;
+	font-weight:bold;
+	color:#274060;
+}
+#advertencia-login{
+	text-align:center;
+	padding:10px;
+}
+#botton-login{
+	background:#274060;
+	width:70%;
+	text-align:center;
+	padding:10px 0px;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-webkit-transition: transform 0.4s ease-out;
+	-moz-transition: transform 0.4s ease-out;
+	-o-transition: transform 0.4s ease-out;
+	transition: transform 0.4s ease-out;
+}
+#botton-login:hover{
+	-ms-transform: scale(2, 3); /* IE 9 */
+    -webkit-transform: scale(2, 3); /* Safari */
+    transform: scale(1.2, 1);
+}
+
+@media only screen and (max-width: 1024px) {
+    #logo{
+		justify-content:center;
+		margin-right:0px;
+		width:500px;
+	}
+	#menu{
+		margin-left:0px;
+		width:800px;
+	}
+	#contenedor-header{
+		padding:0px;
+	}
+}
+
+

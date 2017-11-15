@@ -1,0 +1,18 @@
+<li class="contenerdor_seccion" desplegada="false">
+							<div class="mapa_seccion">
+								<div class="mapa_seccion_img">
+									&nbsp;
+								</div>
+								<div class="mapa_seccion_descripcion">
+									Seccion 1
+								</div>
+							</div>
+							<div class="mapa_opcciones">
+								<ul class="mapa_contenerdor_opciones">
+									<li class="mapa_opccion">Opcion</li>
+									<li class="mapa_opccion">Opcion</li>
+									<li class="mapa_opccion">Opcion</li>
+									<li class="mapa_opccion">Opcion</li>
+								</ul>
+							</div>
+						</li>

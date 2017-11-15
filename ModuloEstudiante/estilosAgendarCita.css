@@ -1,0 +1,63 @@
+
+/* CSS Document */
+/*Verde : #57D069*/
+/*Azul : #23637A*/
+#contenedor_formulario{
+
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	flex-wrap:nowrap;
+
+	background:#E4ECF2;
+	border-radius:10px;
+	padding:2% 5%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	width:95%;
+	height:500px;
+	overflow:auto;
+}
+
+#titulo_form{
+	padding-bottom:2px;
+	margin-bottom:5px;
+	padding-left:20px;
+	padding-right:20px;
+	border-bottom:3px solid #23637A;
+	font-size:36px;
+	font-weight:bold;
+	color:#23637A;
+	text-shadow: 0px 0px 1px rgba(250, 250, 250, 1);
+	white-space:nowrap;
+}
+.contenedor_calendario_hora[asignado=asignado]{
+	background:#0AA;	
+}
+.contenedor_calendario_hora[selected=selected]{
+	background:#0BB;
+}
+#botones .ui-button{
+	padding:2px 5px;
+}
+#botones{
+	padding:5px;
+}
+input[type=radio]{
+	width:25px;
+	height:25px;
+}
+textarea{
+	resize:none;
+	border-radius:5px;
+	height:150px;
+	width:95%;
+	margin:10px auto;
+}
+

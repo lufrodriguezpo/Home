@@ -1,0 +1,59 @@
+
+/* CSS Document */
+
+/*Verde : #57D069*/
+/*Azul : #23637A , #009966*/
+
+#contenedor_formulario{
+
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	flex-wrap:nowrap;
+
+	background:#E4ECF2;
+	border-radius:10px;
+	padding:2% 5%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	width:95%;
+	height:500px;
+	overflow:auto;
+}
+#titulo_formulario{
+	color:#23637A;
+	font-size:34px;
+	font-weight:bold;
+	border-bottom:2px solid #009966;
+	padding-left:20px;
+	padding-right:20px;
+}
+#contenido_formulario{
+	width:95%;
+	margin-left:0px;
+}
+.titulo{
+	padding-left:16px;
+	color: #009966;
+}
+select,select option{
+	font-size:18px;
+}
+select{
+	border-radius:5px;
+}
+input[type=text]{
+	font-size:24px;
+	border:0px solid #CCCCCC;
+	border-radius:5px;
+}
+input.numero{
+	text-align:center;
+}
+

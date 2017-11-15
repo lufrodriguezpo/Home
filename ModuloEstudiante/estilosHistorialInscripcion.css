@@ -1,0 +1,130 @@
+
+/* CSS Document */
+/*Verde : #57D069*/
+/*Azul : #23637A*/
+#contenedor_formulario{
+
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	flex-wrap:nowrap;
+
+	background:#E4ECF2;
+	border-radius:10px;
+	padding:2% 5%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	width:95%;
+	height:500px;
+}
+#titulo_asignacion{
+	margin:20px auto;
+	margin-top:0px;
+	color:#009966;
+	font-size:38px;
+	font-weight:bolder;
+	border-bottom:2px solid #009966;
+	padding:1px 20px;
+}
+#contenido_citas{
+	margin:20px auto;
+	overflow:auto;
+	padding:2px;
+	width:100%;
+}
+#contenedor_citas{
+	background:#CCCCCC;
+	border-radius:10px;
+	overflow:hidden;
+	border:1px solid #999999;
+	width:100%;
+}
+#citas th{
+	background:#23637A;
+	color:#FFFFFF;
+	border:1px solid #fff;
+	font-weight:bold;
+}
+#citas td{
+	line-height:35px;
+	text-align:center;
+	background:#8CB99A;
+	border:1px solid #000000;
+	font-size:22px;
+	
+}
+#citas tr{
+	cursor:pointer;
+}
+#citas tr:hover td{
+	background:#6CA79A;
+}
+#citas tr:first-child th,#areas tr:first-child td{
+	border-top: 0px solid #333333;
+}
+#citas tr:last-child td,#areas tr:last-child th{
+	border-bottom: 0px solid #333333;
+}
+#citas td:first-child, #areas th:first-child{
+	border-left: 0px solid #333333;
+}
+#citas td:last-child, #areas th:last-child{
+	border-right: 0px solid #333333;
+}
+#citas{
+	width:100%;
+}
+.estado{
+	height:16px;
+	width:16px;
+	border-radius:8px;
+	overflow:hidden;
+	background:#999999;
+	margin:auto auto;
+	cursor:pointer;
+}
+.estado.realizada{
+	background:#00FF33;
+}
+.estado.espera{
+	background:#FFCC00;
+}
+.estado.inasistencia{
+	background:#CC0000;
+}
+
+.card_perfil_foto{
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.card_perfil_info_nombre{
+	font-size:20px;
+	line-height:20px;
+	color:#096;
+	font-weight:bold;
+	white-space:nowrap;
+}
+.card_perfil_info_correo{
+	font-size:16px;
+	line-height:16px;
+	color:#23637A;
+	white-space:nowrap;
+}
+.card_perfil_info_carrera{
+	font-size:16px;
+	line-height:16px;
+	color:#23637A;
+	white-space:nowrap;
+}
+.observacionUser{
+	max-width:500px;
+}

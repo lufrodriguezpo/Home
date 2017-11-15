@@ -1,0 +1,5 @@
+Cliente OAuth
+Este es tu ID de cliente:
+52227469803-iiga6gvnps9lskqibritd118e4u8dbo7.apps.googleusercontent.com
+Este es tu secreto de cliente:
+Pd6K4DgB1Uvg9gF7QlW__GD5

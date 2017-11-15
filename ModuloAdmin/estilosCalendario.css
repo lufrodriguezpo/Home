@@ -1,0 +1,316 @@
+
+/* CSS Document */
+/*Verde : #57D069*/
+/*Azul : #23637A*/
+
+/*_----------------- DIAS --------------------*/
+.contenedor_calendario_dias{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	flex-wrap:wrap;
+	width:100%;
+	
+	flex-grow:1;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;/*responsive*/
+	border-radius:5px;
+	transition: all 0.6s;
+
+}
+.eCalendario_dias{
+	flex-grow:1;
+	width:100%;
+	
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+
+}
+.contenedor_titulo{
+	background:#009966;
+	height:70px;
+	overflow:hidden;
+	justify-content:space-between;
+	padding:10px;	
+}
+.titulo_mes{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	
+}
+.botton_meses{
+	font-size:40px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+.botton_meses:hover{
+	font-weight:bolder;
+}
+.nombre_mes{
+	font-size:30px;
+	font-weight:bold;
+}
+.subtitulo_mes{
+	font-size:20px;
+}
+.eDiasSemana{
+	width:50px;
+	flex-grow:1;
+	
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;	
+	color:#222;
+	font-size:18px;
+}
+.contenedor_dias_semana{
+	background:#ddd;
+	height:30px;
+	overflow:hidden;
+	padding:0px 10px;
+}
+.contenedor_dias_mes{
+	flex-grow:1;
+	background:#eee;
+	overflow:hidden;
+	padding:10px;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+.contenedor_semana{
+	flex-grow:1;
+	height:30px;
+	width:1000px;
+	overflow:hidden;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+}
+.contenedor_dia_mes{
+	flex-grow:1;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+}
+.text_dia{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	
+	width:30px;
+	height:30px;
+	overflow:hidden;
+	font-size:16px;
+	color:#888;
+	border-radius:3px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+.text_dia.asignado{
+ 	border-bottom:3px solid #0AA;
+}
+.text_dia.mes_pasado,.text_dia.mes_siguiente{
+	background:#CCCCCC;
+	color:#333333;
+}
+.text_dia:hover{
+	border:2px solid rgba(50,50,50,0.5);	
+}
+.anio_pasado,.anio_siguiente{
+	cursor:default;	
+}
+.anio_pasado:hover,.anio_siguiente:hover{
+	border:0px solid rgba(50,50,50,0.5);	
+}
+.text_dia.actual{
+	background:#069;
+	color:#fff;	
+}
+.nombre_mes{
+	cursor:pointer;
+}
+.anio_siguiente,.anio_pasado{
+
+}
+/*---------------------  MESES ------------------------*/
+.contenedor_calendario_meses{
+	flex-grow:1;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:stretch;
+	background:#096;
+	width:100%;
+	height:500px;
+	overflow:hidden;
+	border-radius:5px;
+	transition: all 0.6s;
+}
+.contenedor_calendrio_trimestre{
+	flex-grow:1;
+	width:1500px;
+	
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:stretch;
+	padding:10px;
+}
+.contenedor_calendario_mes{
+	flex-grow:1;
+	width:100px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	color:#fff;
+	border-radius:5px;
+	overflow:hidden;
+	transition: all 0.5s;
+}
+.contenedor_calendario_mes.actual{
+	background:#069;
+}
+.contenedor_calendario_mes:hover{
+	-webkit-box-shadow: inset 0 0 0 4px rgba(255,255,255,0.5);
+    -moz-box-shadow: inset 0 0 0 4px rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 0 4px rgba(255,255,255,0.5);
+	color:#fff;
+	cursor:pointer;
+}
+
+/*-------------------SEMANA ---------------------*/
+.contenedor_calendario_semanas{
+	background:#CCCCCC;
+	overflow:hidden;
+	width:100%;
+	flex-grow:1;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:stretch;
+	border-radius:5px;
+}
+.contenedor_calendrio_dia_semana{
+	background:#FFFFFF;
+	flex-grow:1;
+	width:100px;
+	overflow:hidden;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:stretch;
+}
+.contenedor_calendrio_dia_semana.titulo_horas{
+	flex-grow:0;
+	width:100px;
+}
+.contenedor_calendario_titulo_dia_semana.enable:hover{
+	cursor:pointer;
+}
+.contenedor_calendario_titulo_dia_semana.dactual{
+	background:#1A7;
+}
+.contenedor_calendario_titulo_dia_semana.enable:hover{
+	background:#1A7;
+}
+.contenedor_calendario_titulo_dia_semana{
+	background:#096;
+	flex-shrink:1;
+	
+	font-size:18px;
+	font-weight:bold;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	height:40px;
+}
+#mes_semana.contenedor_calendario_titulo_dia_semana{
+	background:#066;
+	font-size:22px;
+}
+.contenedor_calendario_hora{
+	background:#00CCFF;
+	flex-shrink:2;
+	height:20px;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:center;
+	align-items:center;
+	background:#FFFFFF;
+	color:#333333;	
+	-webkit-box-shadow: inset 0 0 0 1px rgba(100,100,100,0.5);
+    -moz-box-shadow: inset 0 0 0 1px rgba(100,100,100,0.5);
+    box-shadow: inset 0 0 0 1px rgba(100,100,100,0.5);
+	cursor:pointer;
+}
+
+.titulo_horas .contenedor_calendario_hora{
+	font-size:14px;
+	background: #23637A;
+	color:#fff;
+
+	-webkit-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+    -moz-box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+	cursor:default;
+}
+.contenedor_calendario_hora[selected=selected]{
+	background:#0AA;
+}
+.eDiaSemana{
+	height:30px;
+	flex-grow:1;
+	padding:5px;
+}

@@ -1,0 +1,108 @@
+
+/* CSS Document */
+@font-face {
+    font-family: SansOpen;
+    src: url(../font/Pompiere/Pompiere-Regular.otf);
+    font-weight: normal;
+}
+
+/*ENTORNO*/
+*{
+	padding:0px;
+	margin:0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:'Dosis', sans-serif;
+	font-size:28px;
+}
+body{
+	background:url(images/shattered.png);
+	background-repeat:repeat;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	
+	flex-wrap:nowrap;
+	width:100%;
+	color:#FFFFFF;
+}
+#contenedor_opciones{
+
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	flex-wrap:nowrap;
+
+	background:#23637A;
+	border-radius:10px;
+	padding:2% 5%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	margin:20px auto;
+}
+
+#contenedor_opciones:hover{
+	-webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+	box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.3);
+}
+#titulo_opciones{
+	font-size:34px;
+	font-weight:bold;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+	margin:15px auto;
+	margin-bottom:25px;
+}
+
+.opcion{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	border-radius:10px;
+	padding:5%;
+	overflow:hidden;
+	width:300px;
+	margin:20px auto;
+	
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	
+	flex-wrap:nowrap;
+	background:#57D069;
+	cursor:pointer;
+	transition:transform 1s;
+}
+.opcion:hover {
+	background:#57D069;
+	-ms-transform: scale(1.15, 1); /* IE 9 */
+    -webkit-transform: scale(1.15, 1); /* Safari */
+    transform: scale(1.15, 1);
+}
+.opcion_imagen{	
+	width:50px;
+	height:50px;
+	background-size: cover;
+}
+.opcion_descripcion{
+	flex-grow:1;
+	margin-left:20px;
+}
+

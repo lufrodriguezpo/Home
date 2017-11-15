@@ -1,0 +1,348 @@
+
+/* CSS Document */
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+}
+#mapa_contenedor::-webkit-scrollbar {
+  width: 5px;
+  height: 6px;
+}
+*::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #123f18;
+  border: 0px none #1d6527;
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #1d6527;
+}
+*::-webkit-scrollbar-thumb:active {
+  background: #103816;
+}
+*::-webkit-scrollbar-track {
+  background: #28738e;
+  border: 0px none #1d6527;
+  border-radius: 50px;
+}
+*::-webkit-scrollbar-track:hover {
+  background: #28738e;
+}
+*::-webkit-scrollbar-track:active {
+  background: #1d5165;
+}
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+@font-face {
+    font-family: SansOpen;
+    src: url(../font/Pompiere/Pompiere-Regular.otf);
+    font-weight: normal;
+}
+
+/*ENTORNO*/
+*{
+	padding:0px;
+	margin:0px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:SansOpen;
+	font-size:28px;
+
+}
+body{
+	background:url("https://www.toptal.com/designers/subtlepatterns/patterns/debut_dark.png");
+	background-repeat:repeat;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	align-items:stretch;
+	width:100%;
+	color:#FFFFFF;
+}
+#contenedor-body{
+	background:rgba(0,0,0,0.5);
+	width:100%;
+}
+
+/*HEADER*/
+#contenedor-header{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+	justify-content:space-between;
+	align-items:center;
+	align-content:center;
+	padding:10px;
+	background:#23637A;
+	border-bottom:5px solid #009966;
+}
+.eHeader{
+	flex-grow:1;
+	width:300px;
+	overflow:auto;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+#header_logo{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	align-items:center;
+	align-content:center;
+	padding-left:50px;
+}
+#header_titulo{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	align-items:center;
+	align-content:center;
+	justify-content:center;
+	font-size:50px;
+	font-weight:bolder;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+}
+#header_session{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	align-items:center;
+	align-content:center;
+	justify-content:flex-end;
+	margin-right:50px;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+	
+}
+#boton_cerrar{
+	cursor:pointer;
+}
+#boton_cerrar:hover{
+	color:#57D069;
+	font-size:32px;
+}
+/*Contenido*/
+
+#contenedor_todo{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;	
+	align-items:stretch;
+	overflow:hidden;
+}
+#contenedor_todo *{
+	font-family: 'Dosis', sans-serif;
+}
+.eTodo{
+	flex-grow:1;
+}
+#contenedor_nav{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;	
+	background:#57D069;	
+	align-items:center;
+	justify-content:flex-start;
+	align-content:flex-start;
+	overflow:auto;
+	width:35px;
+}
+#contenedor_contenido{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;	
+	flex-grow:5;
+	align-items:flex-start;
+	justify-content:center;
+	/*background:#353535;*/
+	background:url(../images/shattered.png);
+	padding:2%;
+	height:200px;
+	overflow:auto;
+	width:65px;
+	transition:height 0s;
+}
+.hide-close .ui-dialog-titlebar-close { 
+	display: none; /*no mostrar boton cerrar en dialog*/
+}
+
+
+/*-------------------NAV---------------------*/
+
+#perfil{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	align-content:center;
+	overflow:hidden;
+	min-height:200px;
+}
+
+#perfil_foto{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-end;
+	align-items:flex-end;
+	overflow:hidden;
+
+	border-radius:50px;
+	width:100px;
+	height:100px;
+	border:2px solid #23637A;
+	background-size: cover;
+	margin-top: 30px;
+}
+#perfil_foto_anuncio{
+	overflow:hidden;
+	background:rgba(0,0,0,0.5);
+	font-size:17px;
+	width:100%;
+	text-align:center;
+	cursor:pointer;
+	height:0px;
+	transition:all 0.7s;
+    box-sizing: border-box;
+}
+
+#perfil_foto:hover #perfil_foto_anuncio{
+	height:40px;
+	padding-bottom:10px;
+	padding-top:5px;
+}
+#perfil_info{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	overflow:hidden;
+	margin-top:5px;
+}
+#perfil_info_nombre{
+	font-size:20px;
+	text-align:center;
+	line-height:21px;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+}
+#perfil_info_rol{
+	font-size:20px;
+	line-height:21px;
+	font-weight:bold;
+}
+
+/*-----------MAPA --------------*/
+#mapa_contenedor{
+	margin-top:10px;
+	background:#009966;
+	width:90%;
+	padding:5%;
+	border-bottom:2px solid #23637A;
+	border-top:2px solid #23637A;
+	max-height:300px;
+	overflow:auto;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+}
+#mapa_titulo{
+	margin:10px auto;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+}
+ul.mapa{
+    list-style-position: inside;
+	list-style-type:none;
+}
+.contenerdor_seccion{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	align-items:flex-start;
+	border-bottom:1px solid #57D069;
+	padding-bottom: 1px;
+}
+.mapa_seccion{
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	flex-wrap:nowrap;
+	margin:5px 0px;
+
+}
+.mapa_seccion_img{
+	width:13.5px;
+	height:13.5px;
+	margin:0px 2px;
+	overflow:hidden;
+	background-size: cover;
+	background-image: url('images/vineta.png?v=1');
+	transition: background-image 0.2s;
+	cursor:pointer;
+}
+.mapa_opcciones{
+	width:100%;
+	margin-bottom:5px;
+}
+.mapa_seccion_descripcion{
+	font-size:16px;
+	line-height:15px;
+	text-shadow: 0px 0px 2px rgba(29,101,39, 1);
+}
+.contenerdor_seccion[desplegada=true] .mapa_seccion_img{
+	background-size: cover;
+	background-image: url('images/vineta2.png?v=1');
+}
+.mapa_contenerdor_opciones{
+    list-style-position: inside;
+	list-style-type:none;
+}
+.mapa_contenerdor_opciones .mapa_opccion::before { 
+    content: "- ";
+}
+
+.mapa_contenerdor_opciones .mapa_opccion{
+	margin-left:14px;
+	font-size:14px;
+	line-height:13px;
+	cursor:pointer;
+}
+.mapa_contenerdor_opciones .mapa_opccion:hover{
+	color:#57D069;
+}
+.mapa_opcciones{
+	display:none;
+	transition: display 0.2s;
+}
+.contenerdor_seccion[desplegada=true] .mapa_opcciones{
+	display:block;
+}
+@media only screen and (max-width: 1024px) {
+}
+
+

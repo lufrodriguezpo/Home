@@ -1,0 +1,27 @@
+
+/* CSS Document */
+/*Verde : #57D069*/
+/*Azul : #23637A*/
+#contenedor_formulario{
+
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	flex-direction:column;
+	
+	justify-content:flex-start;
+	align-items:center;
+	
+	flex-wrap:nowrap;
+
+	background:#E4ECF2;
+	border-radius:10px;
+	padding:2% 5%;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+	width:95%;
+	height:500px;
+}
+
+
